@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Quiz | Designed by Saqlain</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style2.css">
+
+<script src="js.js"></script>
+<body>
+<!-- Registration Page-->
+<div class="register" >
+
+
+
+  <div class="container" >
+    <form action="#" return false method="post" id ="reg" style="display: none;" autocomplete="off"><fieldset>
+      <h2>Registration Form</h2>
+    <label for="uname"><b>Username</b></label>
+    <input id="user1" type="text"  placeholder="Enter Username" required>
+    <label for="psw"><b>Password</b></label>
+    <input id="p1" type="password" placeholder="Enter Password"   required>
+    <label for="psw"><b>Re-Password</b></label>
+    <input id="p2" type="password" placeholder="Re-Enter Password" onkeyup="disable()"  required>
+    <button type="button" id="regg1" onclick="regg()" value="Register"  disabled>Register</button>
+      <button type="button" onclick="loginAgain()">Login</button>
+    </fieldset></form>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- Login page-->
+
+  <div>
+    <form action="#" return false method="post" id="login-form" style="display: block;" autocomplete="off"><fieldset>
+      <h2>Login Form</h2>
+      <label for="uname"><b>Username</b></label>
+      <input id="user"  type="text"  placeholder="Enter Username" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input id="pass"  type="password" placeholder="Enter Password"  required>
+      <button type="button" onclick="login()">Login</button>
+       <button type="button" onclick="register()"> Register </button>
+    </form></fieldset>
+</div>
+</div>
+
+<!-- Game Page-->
+<div id="grid" style="display: none">
+  <div id="quiz">
+    <h1>Math Quiz</h1>
+    <h3>Username:<label id="u2"></label></h3>
+    <h3>Score:<label id="score"></label></h3>
+    <hr style="margin-bottom: 20px">
+    <p id="question"></p>
+    <div class="buttons">
+
+      </table>
+      <input id="opt0" type="radio" name="r1" value="0"><div id="c1" ></div>
+      <input id="opt1" type="radio" name="r1" value="1"><div id="c2"></div><br>
+      <input id="opt2" type="radio" name="r1" value="2"><div id="c3"></div>
+      <input id="opt3" type="radio" name="r1" value="3"><div id="c4"></div>
+
+    </div><br>
+
+      <input type="button" value="submit" id="btn0" onclick="gameEval()">
+
+    <hr style="margin-bottom: 50px">
+  </div>
+</div>
+
+<!-- Play Game page-->
+<div id="play" class="register" style="display: none;"><fieldset>
+  <label><h3 style="text-align: center"> Username: <label id="u1"></label></h3></label>
+  <button id="btn1" style="margin-left: 60px;" onclick="playGame()" >Play Game</button><br><br>
+  <button id="btn2" style="margin-left: 60px;" onclick="tab()">Top Score</button>
+</div></fieldset>
+
+<!-- Table creation Page-->
+<div id="point" style="padding-top: 30px; margin: auto; display: none;">
+  <div style="width: 50%; padding-top: 25px; margin: auto; height: 40px; ">
+    <div style="margin: auto; text-align: center; font-family: sans-serif; font-size: x-large">Top Score</div>
+  </div>
+
+  <div id="display"></table></div><br><br>
+  <input type="button" name="Login" style="margin-left: 40%;"  value="Back to Login" onclick="loginAgain()" id="btn3"><br>
+
+
+</div>
+
+</body>
+
+
+</html>
+
+
